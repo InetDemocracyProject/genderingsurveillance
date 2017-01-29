@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gender and Surveillance</title>
+    <meta name="description" content="Gender and Surveillance">
+    <link id="favicon" rel="icon" href="https://internetdemocracy.in/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fskeleton.css">
+    <%= stylesheet_link_tag :style %>
+  </head>
+  <body>
+    <%= yield %>
+    <%= partial "footer" %>
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="/client.js"></script>
+  </body>
+</html>
