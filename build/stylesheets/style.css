@@ -3,6 +3,28 @@ body {
   font-family: 'Noto Sans', sans-serif !important;
 }
 
+/*#case-study > p > span,  #case-study > p, #case-study > span, #case-study > table > span {*/
+#case-study * {
+  font-family: 'Noto Sans', sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.8em !important;
+  color: #333 !important;
+}
+
+#case-study > h1, #case-study > h1 > span {
+  font-family: 'Noto Sans', sans-serif !important;
+  font-size: 32px !important;
+  line-height: 1.8em !important;
+  color: #333 !important;
+}
+
+#case-study > h2, #case-study > h2 > span {
+  font-family: 'Noto Sans', sans-serif !important;
+  font-size: 28px !important;
+  line-height: 1.8em !important;
+  color: #333 !important;
+}
+
 .button.button-primary {
   background-color: #417282;
   border-color: #417282;
@@ -39,6 +61,14 @@ section.safety-app-banner {
   /*text-align: left;*/
   /*min-height: 40em;*/
   background-image: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fsafety_apps.jpg');
+  margin-bottom: 3em;
+  background-size: cover;
+}
+
+section.cctv-banner {
+  /*text-align: left;*/
+  /*min-height: 40em;*/
+  background-image: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fcctv.jpg');
   margin-bottom: 3em;
   background-size: cover;
 }
@@ -232,4 +262,16 @@ a.case-study-title {
 a.case-study-title:hover {
   color: #1EAEDB;
   text-decoration: none;
+}
+
+.footer-idp-logo {
+  height: 7em;
+}
+
+.footer-apc-logo {
+  height: 7em;
+}
+
+.footer-card-container {
+  margin-left: 3%;
 }
