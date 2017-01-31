@@ -1,6 +1,28 @@
 body {
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif !important;
+}
+
+/*#case-study > p > span,  #case-study > p, #case-study > span, #case-study > table > span {*/
+#case-study * {
+  font-family: 'Noto Sans', sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.8em !important;
+  color: #333 !important;
+}
+
+#case-study > h1, #case-study > h1 > span {
+  font-family: 'Noto Sans', sans-serif !important;
+  font-size: 32px !important;
+  line-height: 1.8em !important;
+  color: #333 !important;
+}
+
+#case-study > h2, #case-study > h2 > span {
+  font-family: 'Noto Sans', sans-serif !important;
+  font-size: 28px !important;
+  line-height: 1.8em !important;
+  color: #333 !important;
 }
 
 .button.button-primary {
@@ -14,9 +36,21 @@ body {
 
 section.banner {
   text-align: center;
-  min-height: 50em;
-  background-image: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fsurveillance_banner.jpg');
-  margin-bottom: 3em;
+  min-height: 14em;
+  background-image: url('http://i.imgur.com/ROkPKjx.jpg');
+  margin-bottom: 1em;
+  background-size: cover;
+  background-repeat: repeat-x;
+  zoom: reset;
+}
+
+@media (min-width: 750px) {
+  section.banner {
+    min-height: 50em;
+    margin-bottom: 3em;
+    background-image: url('http://i.imgur.com/ROkPKjx.jpg');
+    zoom: reset;
+  }
 }
 
 .no-padding {
@@ -24,10 +58,19 @@ section.banner {
 }
 
 section.safety-app-banner {
-  text-align: left;
-  min-height: 40em;
-  background-image: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fsafety-app-large.jpeg');
+  /*text-align: left;*/
+  /*min-height: 40em;*/
+  background-image: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fsafety_apps.jpg');
   margin-bottom: 3em;
+  background-size: cover;
+}
+
+section.cctv-banner {
+  /*text-align: left;*/
+  /*min-height: 40em;*/
+  background-image: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fcctv.jpg');
+  margin-bottom: 3em;
+  background-size: cover;
 }
 
 @media (min-width: 750px) {
@@ -56,11 +99,11 @@ section.banner p {
 
 @media (min-width: 750px) {
   section.case-studies {
-    padding-left: 5em;
+    /* padding-left: 5em; */
   }
   
   section.big-data {
-    padding-left: 5em;
+/*     padding-left: 5em; */
   }
 }
 
@@ -72,7 +115,7 @@ section.banner p {
 p.intro-text {
   font-size: 16px;
   line-height: 1.5em;
-  text-align: center;
+  text-align: left;
 }
 
 section.big-data {
@@ -82,34 +125,38 @@ section.big-data {
 }
 
 section.big-data p {
-  padding: 2em;
-  color: #fff;
+  color: #000;
 }
 
 .safety-app {
-  background: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fsafety-app-small.jpeg');
+  background: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fsafety_apps_preview.png');
+  background-size: cover;
 }
 
 .phone-ban {
-  background: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fphone_ban_stock.jpg');
+  background: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fphone_ban_preview.png');
+  background-size: cover;
 }
 
 .garment-bg {
-  background: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fgarment_stock.jpeg');
+  background: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fcctv_preview.png');
+  background-size: cover;
 }
 
 .big-data-bg {
   background: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Focean-small.jpg');
 }
 
+.case-study-btn-container {
+  text-align: left;
+}
+
 .tile {
-  padding: 1em;  
-  min-height: 20em;
   margin-top: 1em;
 }
 
 .tile-container {
-  margin-left: 1%;
+  margin-left: 2%;
 }
 
 .tile > h4, .tile > h3 {
@@ -140,7 +187,6 @@ h4.read-next {
 
 h5.sub-page-site-header {
   margin-bottom: 4px;
-  margin-top: 14px;
   text-align: center;
 }
 
@@ -167,4 +213,65 @@ h2.case-studies {
 
 p.bigger {
   font-size: 18px;
+}
+
+.tile-title {
+    border: 1px solid #f2f2f2;
+    padding: 1em;
+    border-radius: 0 0 5px 5px;
+    margin-top: -6px;
+}
+
+img.case-study-img {
+  max-width:100%;
+  height:auto;
+}
+
+@media (min-width: 750px) {
+  img.case-study-img {
+    min-height: 22em;
+  }
+}
+
+.main-container {
+  padding: 0;
+}
+
+.no-padding {
+  padding: 0;  
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.card {
+  border: 2px solid #f2f2f2;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px #f2f2f2;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+a.case-study-title {
+  color: #000;
+  text-decoration: none;
+}
+
+a.case-study-title:hover {
+  color: #1EAEDB;
+  text-decoration: none;
+}
+
+.footer-idp-logo {
+  height: 7em;
+}
+
+.footer-apc-logo {
+  height: 7em;
+}
+
+.footer-card-container {
+  margin-left: 3%;
 }
