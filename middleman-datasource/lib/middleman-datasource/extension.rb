@@ -3,6 +3,7 @@ require 'middleman-core'
 require 'net/http'
 require "google_drive"
 require 'nokogiri'
+require 'htmlentities'
 
 # Extension namespace
 class DataSource < ::Middleman::Extension
@@ -17,7 +18,8 @@ class DataSource < ::Middleman::Extension
     session = GoogleDrive::Session.from_config("client_secret.json")
     file = session.file_by_url("https://docs.google.com/document/d/#{id}/pub")
     html = file.export_as_string('text/html')
-    doc = Nokogiri::HTML(html)
+    coder = HTMLEntities.new
+    doc = Nokogiri::HTML(coder.decode(html))
     doc.at('body').children.to_html
   end
 

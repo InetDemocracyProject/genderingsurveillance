@@ -13,3 +13,6 @@ gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 gem 'google-api-client'
 gem 'google_drive'
+gem 'htmlentities'
+
+gem 'pry'
