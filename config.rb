@@ -1,5 +1,6 @@
 require "google_drive"
 require 'middleman-datasource/lib/middleman-datasource/extension'
+require 'pry'
 
 ###
 # Page options, layouts, aliases and proxies
@@ -40,6 +41,32 @@ end
 #     "Helping"
 #   end
 # end
+
+helpers do
+  def infographic_html(image_url, target_href, target_text)
+    "<div class = 'card'>
+      <div class='row'>
+        <div class='twelve columns center'>
+          <img class='infographic-img' src=#{image_url} />
+        </div>
+        <div class='twelve columns center'>
+          <a class='button button-primary infographic-button' href=#{target_href} target='_blank'>#{target_text}</a>
+        </div>
+      </div>
+    </div>"
+  end
+
+  def render_infographics(html, data_sheet)
+    doc = Nokogiri::HTML(html)
+    data[data_sheet]['infographics'].each do |infographic|
+      infographic_node = doc.at(infographic['id'])
+      if infographic_node
+        infographic_node.replace(infographic_html(infographic['image_url'], infographic['target_href'], infographic['target_text']))
+      end
+    end
+    doc.to_html
+  end
+end
 
 # Build-specific configuration
 configure :build do
