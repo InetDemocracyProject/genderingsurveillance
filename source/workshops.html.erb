@@ -1,0 +1,71 @@
+---
+title: Welcome to Middleman
+---
+<div class="container u-full-width u-max-full-width">
+  <main>
+    <br><br>
+    <div class='row'>
+      <div class="three columns">&nbsp;</div>
+      <div class='six columns center'>
+        <h2>Workshops</h2>
+        <hr>
+      </div>
+      <div class="three columns">&nbsp;</div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="three columns">&nbsp;</div>
+      <div class='six columns'>
+        <% data.workshops.workshops.each do |workshop| %>
+          <div class='row'>
+            <div class='twelve columns center'>
+              <h3><%= workshop.title %></h3>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='twelve columns'>
+              <img class=<%= workshop.header_image_css %> src=<%= workshop.header_image %> alt=<%= workshop.title %> />
+            </div>
+          </div>
+          <div class='row'>
+          <div class='four columns'>
+            <div class='row card workshop-stat-card'>
+              <div class='four columns'>
+                <i class="fa fa-calendar fa-3x" aria-hidden="true"></i>
+              </div>
+              <div class='eight columns'>
+                <h6 class='workshop-stat'><%= workshop.when %></h6>
+              </div>
+            </div>
+          </div>
+          <div class='four columns'>
+            <div class='row card workshop-stat-card'>
+              <div class='four columns'>
+                <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
+              </div>
+              <div class='eight columns'>
+                <h6 class='workshop-stat workshop-stat-where'><%= workshop.where %></h6>
+              </div>
+            </div>
+          </div>
+          <div class='four columns'>
+            <div class='row card workshop-stat-card'>
+              <div class='six columns'>
+                <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+              </div>
+              <div class='six columns'>
+                <h5 class='workshop-stat-participants'><%= workshop.participants %></h5>
+              </div>
+            </div>
+          </div>
+          </div>
+          <section class="case-study-content" id='case-study'>
+            <%= google_doc(workshop.description_google_doc_id) %>
+          </section>
+          <hr>
+       <% end %>
+      </div>
+      <div class="three columns">&nbsp;</div>
+    </div>
+  </main>
+</div>
