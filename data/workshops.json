@@ -1,0 +1,44 @@
+{
+  "workshops": [
+    {
+      "id": "feminist_net_mumbai",
+      "when": "29th and 30th November 2016",
+      "where": "YMCA, Mumbai",
+      "participants": 30,
+      "title": "Imagine a Feminist Internet",
+      "header_image": "/images/feminist_net_mumbai.jpg",
+      "header_image_css": "feminist_net_mumbai",
+      "description_google_doc_id": "16fu9Wq4vvvLz0f-WtqUje8OaEX7ggn5H87FtC5lGDPE"
+    },
+    {
+      "id": "mahila_samakhya",
+      "when": "27th November 2016",
+      "where": "Muzaffarnagar",
+      "participants": 42,
+      "header_image": "/images/mahila_samakhya_workshop.jpg",
+      "title": "Workshop with Mahila Samakhya",
+      "header_image_css": "mahila_samakhya",
+      "description_google_doc_id": "1D5D2DdVjzTzHrdXYysTGUs219b3_Lfs9lqcfVwX1fgA"
+    },
+    {
+      "id": "fat_workshop",
+      "when": "30th November 2016",
+      "where": "Feminist Approach to Technology, New Delhi",
+      "participants": 30,
+      "header_image": "/images/fat_workshop.jpg",
+      "title": "Workshop with FAT (Feminist Approach to Technology)",
+      "header_image_css": "fat_workshop",
+      "description_google_doc_id": "1sgpoFGVMkYT67Wj1Cuj_O9AAh-a5lFXj1d4Hg8L7TzA"
+    },
+    {
+      "id": "bangalore_workshop",
+      "when": "11th January 2017",
+      "where": "Thought Factory, Bangalore",
+      "participants": 32,
+      "header_image": "/images/bangalore_workshop.jpg",
+      "title": "Gendering Surveillance Workshop",
+      "header_image_css": "bangalore_workshop",
+      "description_google_doc_id": "1IVIaPCM_3-HRuL3kd0yh_dTjQtO3a0ph2FvxYWqO03E"
+    }
+  ]
+}

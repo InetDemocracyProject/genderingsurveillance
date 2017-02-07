@@ -1,0 +1,8 @@
+{
+  "infographics": [
+    {"id": "infographic-meta", "title": "Why safety apps are not so hot", "target_href": "/images/safety_apps_meta_full.png", "target_text": "See infographic", "image_url": "/images/safety_apps_meta_preview.jpg"},
+    {"id": "infographic-features", "title": "Features", "target_href": "/images/safety_apps_features_full.png", "target_text": "See infographic", "image_url": "/images/safety_apps_features_preview.jpg"},
+    {"id": "infographic-data", "title": "Data", "target_href": "/images/safety_apps_data_full.png", "target_text": "See infographic", "image_url": "/images/safety_apps_data_preview.jpg"},
+    {"id": "infographic-left-out", "title": "Who is being left out", "target_href": "/images/safety_apps_left_out_full.png", "target_text": "See infographic", "image_url": "/images/safety_apps_left_out_preview.jpg"}
+  ]
+}
