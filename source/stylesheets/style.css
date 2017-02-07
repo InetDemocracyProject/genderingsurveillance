@@ -8,21 +8,45 @@ body {
   font-family: 'Noto Sans', sans-serif !important;
   font-size: 18px !important;
   line-height: 1.8em !important;
+}
+
+#case-study p span {
   color: #333 !important;
+}
+
+#case-study > p {
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
 }
 
 #case-study > h1, #case-study > h1 > span {
   font-family: 'Noto Sans', sans-serif !important;
-  font-size: 32px !important;
+  font-size: 28px !important;
   line-height: 1.8em !important;
   color: #333 !important;
 }
 
 #case-study > h2, #case-study > h2 > span {
   font-family: 'Noto Sans', sans-serif !important;
-  font-size: 28px !important;
+  font-size: 24px !important;
   line-height: 1.8em !important;
   color: #333 !important;
+}
+
+#case-study img {
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  #case-study > h1, #case-study > h1 > span {
+    text-align: center;
+    font-size: 32px !important;
+  }
+
+  #case-study > h2, #case-study > h2 > span {
+    text-align: center;
+    font-size: 28px !important;
+  }
 }
 
 .button.button-primary {
@@ -35,20 +59,22 @@ body {
 }
 
 section.banner {
-  text-align: center;
+  /*text-align: center;*/
   min-height: 14em;
-  background-image: url('http://i.imgur.com/ROkPKjx.jpg');
-  margin-bottom: 1em;
+  /*background-image: url('http://i.imgur.com/ROkPKjx.jpg');*/
+  background-image: url('/images/banner.jpg');
+  /*margin-bottom: 1em;*/
   background-size: cover;
-  background-repeat: repeat-x;
-  zoom: reset;
+  /*background-repeat: repeat-x;*/
+  /*zoom: reset;*/
 }
 
 @media (min-width: 750px) {
   section.banner {
     min-height: 50em;
     margin-bottom: 3em;
-    background-image: url('http://i.imgur.com/ROkPKjx.jpg');
+    /*background-image: url('http://i.imgur.com/ROkPKjx.jpg');*/
+    background-image: url('/images/banner.jpg');
     zoom: reset;
   }
 }
@@ -59,7 +85,7 @@ section.banner {
 
 section.safety-app-banner {
   /*text-align: left;*/
-  /*min-height: 40em;*/
+  min-height: 35em;
   background-image: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fsafety_apps.jpg');
   margin-bottom: 3em;
   background-size: cover;
@@ -73,9 +99,25 @@ section.cctv-banner {
   background-size: cover;
 }
 
+img.safety-app-cover, img.cctv-cover {
+  height: 14em;
+}
+
+img.workshop-cover {
+  height: 23.5em; 
+}
+
+img.banner-img {
+  width: 100%;
+}
+
 @media (min-width: 750px) {
   section.banner {
     text-align: center;
+  }
+
+  img.safety-app-cover, img.cctv-cover {
+    height: 30em;
   }
 }
 
@@ -155,8 +197,10 @@ section.big-data p {
   margin-top: 1em;
 }
 
-.tile-container {
-  margin-left: 2%;
+@media (min-width: 750px) {
+  .tile-container {
+    margin-left: 2%;
+  }
 }
 
 .tile > h4, .tile > h3 {
@@ -167,11 +211,6 @@ section.big-data p {
   color: #fff;
 }
 
-@media (min-width: 750px) {
-  footer {
-    padding-left: 2em;
-  }
-}
 
 section.case-study-content {
     line-height: 1.7em;
@@ -191,12 +230,25 @@ h5.sub-page-site-header {
 }
 
 h5.sub-page-site-header > a {
-  color: #fff;
+  color: #333;
   text-decoration: none;
+}
+
+img.nav-home {
+  height: 1em;
 }
 
 footer {
   margin-top: 5em;
+  background-color: rgba(0, 106, 185, 0.75);
+  color: #fff;
+  padding: 1em;
+}
+
+@media (min-width: 750px) {
+  footer {
+    padding-left: 4%;
+  }
 }
 
 h2.case-studies {
@@ -229,7 +281,7 @@ img.case-study-img {
 
 @media (min-width: 750px) {
   img.case-study-img {
-    min-height: 22em;
+    /*min-height: 22em;*/
   }
 }
 
@@ -254,6 +306,32 @@ img.case-study-img {
   margin-top: 2em;
 }
 
+.card-white-bg {
+  background-color: #fff;
+  color: #333;
+}
+
+.footer-card {
+  min-height: 15em;
+  box-shadow: none;
+}
+
+.infographic-img {
+  max-height: 7em;
+}
+
+@media (min-width: 750px) {
+  .infographic-img {
+    max-height: 16em;
+  }
+}
+
+
+a.infographic-button {
+  color: #fff;
+  margin-top: 1em;
+}
+
 a.case-study-title {
   color: #000;
   text-decoration: none;
@@ -265,13 +343,49 @@ a.case-study-title:hover {
 }
 
 .footer-idp-logo {
-  height: 7em;
+  height: 9em;
 }
 
 .footer-apc-logo {
   height: 7em;
 }
 
-.footer-card-container {
-  margin-left: 3%;
+@media (min-width: 750px) {
+  .footer-card-container {
+    margin-left: 3%;
+  }
 }
+
+img.mahila_samakhya {
+  height: 34.4em;
+}
+
+img.feminist_net_mumbai {
+  height: 34.4em;
+}
+
+img.fat_workshop {
+  height: 34.6em;
+}
+
+img.bangalore_workshop {
+  height: 25.9em;
+}
+
+h6.workshop-stat {
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.workshop-stat-card {
+  min-height: 8.5em;
+}
+
+.workshop-stat-where {
+  padding-top: 2px;
+}
+
+.workshop-stat-participants {
+  padding-top: 5px;
+}
+
