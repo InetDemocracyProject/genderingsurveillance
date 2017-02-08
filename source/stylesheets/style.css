@@ -3,6 +3,16 @@ body {
   font-family: 'Noto Sans', sans-serif !important;
 }
 
+main.index {
+  margin-top: 1em;
+}
+
+@media (min-width: 750px) {
+  main.index {
+    margin-top: 2em;
+  }
+}
+
 /*#case-study > p > span,  #case-study > p, #case-study > span, #case-study > table > span {*/
 #case-study * {
   font-family: 'Noto Sans', sans-serif !important;
@@ -14,7 +24,7 @@ body {
   color: #333 !important;
 }
 
-#case-study > p {
+.case-study-content p {
   margin-top: 1em !important;
   margin-bottom: 1em !important;
 }
@@ -99,25 +109,13 @@ section.cctv-banner {
   background-size: cover;
 }
 
-img.safety-app-cover, img.cctv-cover {
-  height: 14em;
-}
-
-img.workshop-cover {
-  height: 23.5em; 
-}
-
-img.banner-img {
+img.banner-img, img.safety-app-cover, img.phone-ban-cover, img.cctv-cover, img.workshop-cover {
   width: 100%;
 }
 
 @media (min-width: 750px) {
   section.banner {
     text-align: center;
-  }
-
-  img.safety-app-cover, img.cctv-cover {
-    height: 30em;
   }
 }
 
@@ -141,7 +139,11 @@ section.banner p {
 
 @media (min-width: 750px) {
   section.case-studies {
-    /* padding-left: 5em; */
+    margin-top: 5em;
+  }
+  
+  section.read-more-case-studies {
+    padding-left: 5em; 
   }
   
   section.big-data {
@@ -170,25 +172,6 @@ section.big-data p {
   color: #000;
 }
 
-.safety-app {
-  background: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fsafety_apps_preview.png');
-  background-size: cover;
-}
-
-.phone-ban {
-  background: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fphone_ban_preview.png');
-  background-size: cover;
-}
-
-.garment-bg {
-  background: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fcctv_preview.png');
-  background-size: cover;
-}
-
-.big-data-bg {
-  background: url('https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Focean-small.jpg');
-}
-
 .case-study-btn-container {
   text-align: left;
 }
@@ -210,7 +193,6 @@ section.big-data p {
 .tile > p {
   color: #fff;
 }
-
 
 section.case-study-content {
     line-height: 1.7em;
@@ -239,8 +221,8 @@ img.nav-home {
 }
 
 footer {
-  margin-top: 5em;
-  background-color: rgba(0, 106, 185, 0.75);
+  margin-top: 10em;
+  background-color: rgba(0, 111, 186, 1);
   color: #fff;
   padding: 1em;
 }
@@ -251,7 +233,7 @@ footer {
   }
 }
 
-h2.case-studies {
+h2.section-header {
   text-align: center;
 }
 
@@ -275,7 +257,7 @@ p.bigger {
 }
 
 img.case-study-img {
-  max-width:100%;
+  width:100%;
   height:auto;
 }
 
@@ -298,9 +280,9 @@ img.case-study-img {
 }
 
 .card {
-  border: 2px solid #f2f2f2;
   padding: 1em;
   border-radius: 5px;
+  border: 2px solid #f2f2f2;
   box-shadow: 0px 3px 3px #f2f2f2;
   margin-bottom: 2em;
   margin-top: 2em;
@@ -357,19 +339,19 @@ a.case-study-title:hover {
 }
 
 img.mahila_samakhya {
-  height: 34.4em;
+  width: 100%;
 }
 
 img.feminist_net_mumbai {
-  height: 34.4em;
+  width: 100%;
 }
 
 img.fat_workshop {
-  height: 34.6em;
+  width: 100%;
 }
 
 img.bangalore_workshop {
-  height: 25.9em;
+  width: 100%;
 }
 
 h6.workshop-stat {
@@ -387,5 +369,62 @@ h6.workshop-stat {
 
 .workshop-stat-participants {
   padding-top: 5px;
+}
+
+nav {
+  box-shadow: 0px 3px 3px rgba(0, 111, 186, 1);
+  background-color: rgba(0, 111, 186, 1);
+  margin-bottom: 3em;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  .logo-container {
+    text-align: left;
+  }
+}
+
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  margin-top: 12px;
+}
+
+@media (min-width: 750px) {
+  nav ul {
+    text-align: right;
+  }
+}
+
+nav ul li {
+  display: inline;
+  text-align: right;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: .2em 1em;
+  padding-right: 0;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  font-weight: 900;
+  border-bottom: rgba(0, 111, 186, 1);
+}
+
+nav img.logo {
+  height: 3em;
+  margin-left: -22px;
 }
 

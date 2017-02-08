@@ -1,0 +1,37 @@
+---
+title: Welcome to Middleman
+---
+<div class="container u-full-width u-max-full-width">
+  <%= partial "nav" %>
+  <main>
+    <br><br>
+    <div class='row'>
+      <div class="three columns">&nbsp;</div>
+      <div class='six columns center'>
+        <h2>More resources</h2>
+        <hr>
+      </div>
+      <div class="three columns">&nbsp;</div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="three columns">&nbsp;</div>
+      <div class='six columns'>
+        <% data.resources.resources.each do |resource| %>
+          <div class='row'>
+            <div class='twelve columns center'>
+              <h4><%= resource.title %></h4>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='twelve columns'>
+              <iframe width="100%" height="415" src=<%="https://www.youtube.com/embed/" + resource.youtube_id%> frameborder="0" allowfullscreen></iframe>
+              <br /><br /><br />
+            </div>
+          </div>
+       <% end %>
+      </div>
+      <div class="three columns">&nbsp;</div>
+    </div>
+  </main>
+</div>

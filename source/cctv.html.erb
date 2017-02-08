@@ -3,27 +3,17 @@ layout: layout
 title: Welcome to Middleman
 ---
 <div class="container u-full-width u-max-full-width">
-  <header>
-      <div class="row">
-        <div class="three columns">&nbsp;</div>
-        <div class="six columns">
-          <h5 class='sub-page-site-header'>
-<!--             <a href="/">
-              <img class='nav-home' src="/images/home.png" alt="">
-            </a>
- -->          </h5>
-        </div>
-        <div class="three columns">&nbsp;</div>
-      </div>
-      <div class="row">
-        <div class="three columns">&nbsp;</div>
-        <div class="six columns">
-          <img class='cctv-cover' src="https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fcctv.jpg" alt="">
-        </div>
-        <div class="three columns">&nbsp;</div>
-      </div>
-  </header>
+  <%= partial "nav" %>
+  <div class="row">
+    <div class="three columns">&nbsp;</div>
+    <div class="six columns">
+      <h5 class='sub-page-site-header'><a href="/"></a></h5>
+      <img class='cctv-cover' src="/images/cctv.jpg" alt="CCTVs in garment factories">
+    </div>
+    <div class="three columns">&nbsp;</div>
+  </div>
 </div>
+
 <div class="container u-full-width u-max-full-width">
   <main>
     <div class="row">
@@ -51,7 +41,7 @@ title: Welcome to Middleman
             <img class="case-study-img" src="https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fphone_ban_preview.png" alt="Safety apps">
             <div class="tile-title">
               <h5>
-                <a class='case-study-title' href='/'>Going behind mobile phone bans in north India</a>
+                <a class='case-study-title' href='/phone_ban'>Going behind mobile phone bans in north India</a>
               </h5>
             </div>
           </div>

@@ -3,26 +3,15 @@ layout: layout
 title: Welcome to Middleman
 ---
 <div class="container u-full-width u-max-full-width">
-  <header>
-      <div class="row">
-        <div class="three columns">&nbsp;</div>
-        <div class="six columns">
-          <h5 class='sub-page-site-header'>
-<!--             <a href="/">
-              <img class='nav-home' src="/images/home.png" alt="">
-            </a>
- -->          </h5>
-        </div>
-        <div class="three columns">&nbsp;</div>
-      </div>
-      <div class="row">
-        <div class="three columns">&nbsp;</div>
-        <div class="six columns">
-          <img class='cctv-cover' src="/images/phone_ban.jpg" alt="">
-        </div>
-        <div class="three columns">&nbsp;</div>
-      </div>
-  </header>
+  <%= partial "nav" %>
+  <div class="row">
+    <div class="three columns">&nbsp;</div>
+    <div class="six columns">
+      <h5 class='sub-page-site-header'><a href="/"></a></h5>
+      <img class='phone-ban-cover' src="/images/phone_ban.jpg" alt="Phone ban">
+    </div>
+    <div class="three columns">&nbsp;</div>
+  </div>
 </div>
 <div class="container u-full-width u-max-full-width">
   <main>

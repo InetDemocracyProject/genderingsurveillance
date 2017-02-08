@@ -2,6 +2,7 @@
 title: Welcome to Middleman
 ---
 <div class="container u-full-width u-max-full-width">
+  <%= partial "nav" %>
   <main>
     <br><br>
     <div class='row'>
@@ -59,7 +60,7 @@ title: Welcome to Middleman
             </div>
           </div>
           </div>
-          <section class="case-study-content" id='case-study'>
+          <section class="case-study-content">
             <%= google_doc(workshop.description_google_doc_id) %>
           </section>
           <hr>
