@@ -1,3 +1,12 @@
+
+/*Color palette*/
+
+a {
+  color: rgba(0, 111, 186, 1);
+}
+
+/* end */
+
 body {
   margin: 0;
   font-family: 'Noto Sans', sans-serif !important;
@@ -41,6 +50,10 @@ main.index {
   font-size: 24px !important;
   line-height: 1.8em !important;
   color: #333 !important;
+}
+
+#case-study a {
+  color: rgba(0, 111, 186, 1) !important;
 }
 
 #case-study img {
@@ -387,7 +400,14 @@ nav {
   }
 }
 
-
+nav.fixed{
+  margin-top: -6px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding-top: 7px;
+  z-index: 100;
+}
 
 nav ul {
   margin: 0;
