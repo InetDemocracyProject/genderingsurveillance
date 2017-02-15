@@ -1,6 +1,20 @@
 ---
 title: Welcome to Middleman
 ---
+<style>
+ body {
+  background-color: #f9f9f8;
+ }
+
+ .card {
+    background-color: #fff;
+    box-shadow: none;
+ }
+
+ .tile {
+  background-color: #fff;
+ }
+</style>
 
 <div class="container u-full-width u-max-full-width no-padding">
   <header>
@@ -17,31 +31,17 @@ title: Welcome to Middleman
       <div class="three columns">&nbsp;</div>
       <div class="six columns">
         <h2 class="section-header">Introduction</h2>
-        <div class='card card-white-bg intro-card'>
+        <div class='card'>
           <div class="intro-text">
             <section class="case-study-content">
-            <p>
-              While the surveillance powers of the Indian government and its agencies are continuously expanding, most people still seem to think that this is not something that affects them. If you have not done anything wrong, you have nothing to hide, right?
-            </p>
-            <p>
-              Not quite. And women would know. Although the digital age may have further deepened the scrutiny to which women are subjected, women have always been under stringent surveillance - by actors ranging from partners and parents to the state. And this has shaped, and harmed, women’s lives in multiple ways.
-            </p>
-            <p>
-              What can be learned about surveillance from gendering it, then? And what do these insights imply for the fight for stronger human rights protections in the face of surveillance more broadly?
-            </p>
-            <p>
-              Welcome to Gendering Surveillance.
-            </p>
-            <p class='center'>
-              <a class='button button-primary intro-button' href="/intro">Read more</a>
-            </p>
+              <%= google_doc('1YImTrRfR1bTHkm37jq-ehVDNyyZxSaCM84z7-BepuMw') %>
             </section>
           </div>
         </div>
       </div>
       <div class="three columns">&nbsp;</div>
     </div>
-    <div class="row case-studies-bg">
+    <div class="row">
       <section class="case-studies" id="case-studies">
         <div class="row">
           <div class="three columns">&nbsp;</div>
@@ -74,7 +74,7 @@ title: Welcome to Middleman
                   <a class='case-study-title' href='/safety-app'>A Handy Guide to Decide How Safe That Safety App Will Really Keep You</a>
                 </h5>
                 <p>
-                  Imagine a world where an army of women’s safety apps scoops you away from danger, and delivers you to safety? That’s the promise made by these apps. How well do they measure up against their own claims? Let’s look at a cackle of apps that act as surveillance assistants, leak your data and look smug, while purporting to keep you safe.
+                  Imagine a world where an army of women’s safety apps scoops you away from danger, and delivers you to safety? That’s the promise made by these apps. How well do they measure up against their own claims? Let’s look instead at a cackle of apps that act as surveillance assistants, leak your data and look smug, while purporting to keep you safe.
                 </p>
               </div>
             </a>
@@ -86,7 +86,7 @@ title: Welcome to Middleman
               <img class='case-study-img' src="https://cdn.gomix.com/45fa7fae-d274-4735-b1e0-edd5ae91bfe6%2Fcctv_preview.png" alt="CCTV cameras in garment factories">
               <div class="tile-title">
                 <h5>
-                  <a class='case-study-title' href='/cctv'>Caution! Women at Work: Surveillance in Garments Factories</a>
+                  <a class='case-study-title' href='/cctv'>Production Targets, Surveillance Targets - CCTV cameras in garment factories</a>
                 </h5>
                 <p>
                   Garment factory workers, predominantly women, work in stressful conditions in an exploitative industry where the pay is low. Read on to find out what CCTV cameras have done to the dramatic imbalance of power between workers and the factory management, and what role they can play in workers’ fight for an equitable workplace.
@@ -119,5 +119,31 @@ title: Welcome to Middleman
 
 <% content_for :scripts do %>
   <script>
+    var bannerImgHeight = document.getElementById('banner-img').clientHeight;
+    window.onscroll = function() {
+      var nav = document.getElementsByTagName('nav')[0];
+      var navUl = document.getElementById('nav-ul');
+      var logoContainer = document.getElementById('logo-container');
+      var navUlContainer = document.getElementById('nav-ul-container');
+      if ( window.pageYOffset > bannerImgHeight ) {
+        nav.classList.add("fixed");
+        nav.classList.remove("home");
+        logoContainer.classList.remove('hidden');
+        navUl.classList.remove('center');
+        navUlContainer.classList.remove('twelve');
+        navUlContainer.classList.remove('columns');
+        navUlContainer.classList.add('four');
+        navUlContainer.classList.add('columns');
+      } else {
+        nav.classList.add("home");
+        nav.classList.remove("fixed");
+        logoContainer.classList.add('hidden');
+        navUlContainer.classList.remove('four');
+        navUlContainer.classList.remove('columns');
+        navUlContainer.classList.add('twelve');
+        navUlContainer.classList.add('columns');
+        navUl.classList.add('center');
+      }
+    }
   </script>
 <% end %>
