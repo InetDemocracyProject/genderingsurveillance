@@ -56,15 +56,17 @@ main.index {
 }
 
 /*#case-study > p > span,  #case-study > p, #case-study > span, #case-study > table > span {*/
+
 #case-study * {
-  font-family: 'Noto Sans', sans-serif !important;
+  font-family: 'Yrsa', serif !important;
   font-size: 18px !important;
-  line-height: 1.8em !important;
+  line-height: 1.4em !important;
 }
 
 #case-study p span {
   color: #333 !important;
-  font-family: 'Noto Sans', sans-serif !important;
+  font-family: 'Yrsa', serif !important;
+  font-size: 18px !important;
 }
 
 .case-study-content > p {
@@ -76,14 +78,14 @@ main.index {
 
 #case-study > h1, #case-study > h1 > span {
   font-family: 'Noto Sans', sans-serif !important;
-  font-size: 28px !important;
+  /*font-size: 28px !important;*/
   line-height: 1.8em !important;
   color: #333 !important;
 }
 
 #case-study > h2, #case-study > h2 > span {
   font-family: 'Noto Sans', sans-serif !important;
-  font-size: 24px !important;
+  /*font-size: 24px !important;*/
   line-height: 1.8em !important;
   color: #333 !important;
 }
@@ -103,13 +105,13 @@ main.index {
 @media (min-width: 750px) {
   #case-study > h1, #case-study > h1 > span {
     text-align: center;
-    font-size: 32px !important;
+    /*font-size: 32px !important;*/
     font-family: 'Noto Sans', sans-serif !important;
   }
 
   #case-study > h2, #case-study > h2 > span {
     text-align: center;
-    font-size: 28px !important;
+    /*font-size: 28px !important;*/
     font-family: 'Noto Sans', sans-serif !important;
   }
 }
@@ -382,11 +384,13 @@ img.case-study-img {
 
 .infographic-img {
   max-height: 7em;
+  max-width: 300px;
 }
 
 @media (min-width: 750px) {
   .infographic-img {
     max-height: 16em;
+    max-width: 600px;
   }
 }
 
@@ -394,6 +398,7 @@ img.case-study-img {
 a.infographic-button {
   color: #fff;
   margin-top: 1em;
+  font-size: 26px !important;
 }
 
 a.case-study-title {
@@ -489,7 +494,7 @@ nav ul li {
 
 nav ul li a {
   color: #fff;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
   text-decoration: none;
   padding-left: 5px;
@@ -518,7 +523,7 @@ nav img.logo {
 
   nav ul {
     text-align: right;
-    margin-top: 10px;
+    margin-top: 12px;
   }
 
   nav ul li {
@@ -533,6 +538,7 @@ nav img.logo {
     text-decoration: none;
     padding: .2em 1em;
     padding-right: 0;
+    font-family: 'Noto Sans', sans-serif;
   }
 
   nav ul li a:hover {
