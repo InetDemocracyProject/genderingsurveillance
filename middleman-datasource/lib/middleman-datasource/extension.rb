@@ -18,8 +18,13 @@ class DataSource < ::Middleman::Extension
     session = GoogleDrive::Session.from_config("client_secret.json")
     file = session.file_by_url("https://docs.google.com/document/d/#{id}/pub")
     html = file.export_as_string('text/html')
-    coder = HTMLEntities.new
-    doc = Nokogiri::HTML(coder.decode(html))
+    # coder = HTMLEntities.new
+    # doc = Nokogiri::HTML(coder.decode(html))
+    doc = Nokogiri::HTML(html)
+    # doc.xpath('//@style').remove
+    doc.xpath('//@*').remove
+    spans = doc.search("span")
+    spans.each {|span| span.replace(span.content)}
     doc.at('body').children.to_html
   end
 

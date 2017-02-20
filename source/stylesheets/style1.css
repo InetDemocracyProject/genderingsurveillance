@@ -1,5 +1,6 @@
 
 /*Color palette*/
+/*background-color; #f9f9f8*/
 
 a {
   color: rgba(0, 111, 186, 1);
@@ -32,7 +33,9 @@ a:hover {
 
 body {
   margin: 0;
-  font-family: 'Yrsa', serif;
+  /*font-family: 'Yrsa', serif;*/
+  font-family: 'Roboto Slab', serif;
+  color: rgba(0,0,0, 0.8);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main {
-  margin-top: 4em;
+  /*margin-top: 4em;*/
 }
 
 main.index {
@@ -55,47 +58,27 @@ main.index {
   }
 }
 
-/*#case-study > p > span,  #case-study > p, #case-study > span, #case-study > table > span {*/
-
-#case-study * {
-  font-family: 'Yrsa', serif !important;
-  font-size: 18px !important;
-  line-height: 1.4em !important;
+.case-study-content p {
+  line-height: 2em;
+  font-size: 18px;
 }
 
-#case-study p span {
-  color: #333 !important;
-  font-family: 'Yrsa', serif !important;
-  font-size: 18px !important;
+#case-study h1 h2 h3 h4 h5 h6 {
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.8em;
 }
 
-.case-study-content > p {
-  margin-top: 8px !important;
-  margin-bottom: 8px !important;
-  line-height: 1.5em;
-  font-size: 20px;
-}
-
-#case-study > h1, #case-study > h1 > span {
-  font-family: 'Noto Sans', sans-serif !important;
-  /*font-size: 28px !important;*/
-  line-height: 1.8em !important;
-  color: #333 !important;
-}
-
-#case-study > h2, #case-study > h2 > span {
-  font-family: 'Noto Sans', sans-serif !important;
-  /*font-size: 24px !important;*/
-  line-height: 1.8em !important;
-  color: #333 !important;
+#case-study blockquote {
+  border-left: 5px solid #eaeae9;
+  padding-left: 2em;
 }
 
 #case-study a {
-  color: rgba(0, 111, 186, 1) !important;
+  color: rgba(0, 111, 186, 1);
 }
 
 #case-study a.infographic-button {
-  color: #fff !important;
+  color: #fff;
 }
 
 #case-study img {
@@ -105,19 +88,28 @@ main.index {
 @media (min-width: 750px) {
   #case-study > h1, #case-study > h1 > span {
     text-align: center;
-    /*font-size: 32px !important;*/
-    font-family: 'Noto Sans', sans-serif !important;
-  }
-
-  #case-study > h2, #case-study > h2 > span {
-    text-align: center;
-    /*font-size: 28px !important;*/
-    font-family: 'Noto Sans', sans-serif !important;
+    /*font-size: 32px;*/
+    font-family: 'Noto Sans', sans-serif;
   }
 }
 
 .bold {
   font-weight: bold;
+}
+
+#toc-card {
+  margin-top: 0;
+  padding-top: 2em;
+}
+
+#toc-card > ul > li {
+  list-style: none;
+}
+
+.section-background {
+  background: #f9f9f8;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 section.banner {
@@ -191,7 +183,7 @@ section.banner p {
 
 .case-studies-bg {
   background-color: #f9f9f8;
-  padding-bottom: 6em;
+  padding-bottom: 3em;
 }
 
 @media (min-width: 750px) {
@@ -261,8 +253,7 @@ section.case-study-content {
 
 h4.read-next {
     margin-left: 10px;
-    margin-bottom: 2px;
-    margin-top: 2em;
+    margin-bottom: -10px;
 }
 
 h5.sub-page-site-header {
@@ -303,6 +294,15 @@ h2.section-header {
 
 .tile-big-data {
   background-color:#565454;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.workshops-header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
 }
 
 .center {
@@ -512,7 +512,7 @@ nav img.logo {
 @media (min-width: 750px) {
   nav {
     background-color: rgba(0, 111, 186, 1);
-    margin-bottom: 3em;
+    /*margin-bottom: 3em;*/
     padding-top: 0;
   }
 
@@ -523,7 +523,7 @@ nav img.logo {
 
   nav ul {
     text-align: right;
-    margin-top: 12px;
+    margin-top: 9px;
   }
 
   nav ul li {

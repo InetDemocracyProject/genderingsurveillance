@@ -4,12 +4,13 @@ title: Welcome to Middleman
 <%= partial "nav" %>
 <div class="container u-full-width u-max-full-width">
   <main>
-    <br><br>
     <div class='row'>
       <div class="three columns">&nbsp;</div>
       <div class='six columns center'>
-        <h2>Workshops</h2>
-        <hr>
+        <h2 class='workshops-header'>Workshops</h2>
+        <h6 class='left-align'>
+        Browse details of workshops we conducted with different groups in the course of our research, along with an overview of the agendas.
+        </h6>
       </div>
       <div class="three columns">&nbsp;</div>
     </div>
@@ -61,7 +62,7 @@ title: Welcome to Middleman
           </div>
           </div>
           <section class="case-study-content">
-            <%= google_doc(workshop.description_google_doc_id) %>
+            <%= workshop.content_html %>
           </section>
           <hr>
        <% end %>
