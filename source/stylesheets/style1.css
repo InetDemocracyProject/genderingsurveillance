@@ -1,6 +1,7 @@
 
 /*Color palette*/
 /*background-color; #f9f9f8*/
+/*color: rgba(0,0,0, 0.8);*/
 
 a {
   color: rgba(0, 111, 186, 1);
@@ -106,10 +107,14 @@ main.index {
   list-style: none;
 }
 
+#toc-card > ol > li > a {
+  color: rgba(0,0,0, 0.8);
+}
+
 .section-background {
   background: #f9f9f8;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
 }
 
 section.banner {
@@ -231,9 +236,9 @@ section.big-data p {
   /*background-color: rgba(0, 111, 186, 0.1);*/
 }
 
-@media (min-width: 750px) {
+@media (min-width: 500px) {
   .tile-container {
-    margin-left: 2%;
+    margin-left: 2% !important;
   }
 }
 
@@ -314,14 +319,15 @@ p.bigger {
 }
 
 .tile-title {
-    /*border: 1px solid #f2f2f2;*/
-    /*border: 2px solid #ccc;*/
-    background-color: rgba(0, 111, 186, 1);
-    padding: 1em;
-    border-radius: 0 0 5px 5px;
-    margin-top: -10px;
-    padding-top: 20px;
-    background-color: #fff;
+  /*border: 1px solid #f2f2f2;*/
+  /*border: 2px solid #ccc;*/
+  background-color: rgba(0, 111, 186, 1);
+  padding: 1em;
+  border-radius: 0 0 5px 5px;
+  margin-top: -10px;
+  padding-top: 20px;
+  background-color: #fff;
+  min-height: 31em;
 }
 
 .tile-title > h5 {
