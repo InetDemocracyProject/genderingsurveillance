@@ -66,6 +66,10 @@ helpers do
     end
     doc.to_html
   end
+
+  def reference_indent()
+    "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+  end
 end
 
 # Build-specific configuration
