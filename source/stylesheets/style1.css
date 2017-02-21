@@ -61,7 +61,11 @@ main.index {
 
 .case-study-content p {
   line-height: 2em;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+p.normal {
+  font-size: 20px;
 }
 
 #case-study h1 h2 h3 h4 h5 h6 {
@@ -327,7 +331,7 @@ p.bigger {
   margin-top: -10px;
   padding-top: 20px;
   background-color: #fff;
-  min-height: 31em;
+  min-height: 24.3em;
 }
 
 .tile-title > h5 {
