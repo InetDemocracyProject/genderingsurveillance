@@ -350,6 +350,10 @@ img.case-study-img {
   height:auto;
 }
 
+p.quote {
+  font-size: 18px;
+}
+
 @media (min-width: 750px) {
   img.case-study-img {
     /*min-height: 22em;*/
