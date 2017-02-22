@@ -13,6 +13,11 @@ a:hover {
   text-decoration: none;
 }
 
+p {
+  line-height: 1.7em;
+  font-size: 18px;
+}
+
 .button-primary {
   background-color: rgba(0, 111, 186, 1);
 }
@@ -28,6 +33,10 @@ a:hover {
 
 .hidden {
   display: none;
+}
+
+a.read-more {
+  font-family: 'Noto Sans', sans-serif;
 }
 
 /* end */
@@ -50,6 +59,7 @@ main {
 main.index {
   margin-top: 0em;
   background-color: #f9f9f8;
+  padding: 1em;
 }
 
 @media (min-width: 750px) {
@@ -57,11 +67,6 @@ main.index {
     padding-top: 3em;
     margin-top: -7px;
   }
-}
-
-.case-study-content p {
-  line-height: 2em;
-  font-size: 20px;
 }
 
 p.normal {
@@ -80,6 +85,7 @@ p.normal {
 
 #case-study a {
   color: rgba(0, 111, 186, 1);
+  word-wrap: break-word;
 }
 
 #case-study a.infographic-button {
@@ -286,9 +292,14 @@ footer {
   padding: 1em;
 }
 
+footer p {
+  font-size: 15px;
+}
+
 ul.footer-list > li {
   margin-top: 4px;
   list-style: none;
+  font-size: 15px
 }
 
 @media (min-width: 750px) {
@@ -339,9 +350,11 @@ p.bigger {
   font-size: 26px;
 }
 
+.tile-title > h5 {
+}
+
 .tile-title > p {
   line-height: 1.5em;
-  font-size: 20px;
   margin-top: 20px;
 }
 
@@ -392,7 +405,7 @@ p.quote {
 }
 
 .footer-card {
-  min-height: 15em;
+  min-height: 18em;
   box-shadow: none;
 }
 
@@ -508,7 +521,7 @@ nav ul li {
 
 nav ul li a {
   color: #fff;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
   text-decoration: none;
   padding-left: 5px;
