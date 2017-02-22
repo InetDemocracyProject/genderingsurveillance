@@ -555,18 +555,18 @@ nav img.logo {
   }
 
   nav ul {
-    text-align: left;
+    text-align: right;
     margin-top: 9px;
   }
 
   nav ul li {
     display: inline;
-    text-align: left;
+    text-align: right;
   }
 
   nav ul li a {
     color: #fff;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     text-decoration: none;
     padding: .2em 1em;
