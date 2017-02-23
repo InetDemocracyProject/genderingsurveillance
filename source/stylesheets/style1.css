@@ -592,3 +592,7 @@ nav img.logo {
 p.licence {
   color: #000;
 }
+
+p.image-subtext {
+  font-size: 16px;
+}
