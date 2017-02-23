@@ -100,6 +100,7 @@ p.normal {
 
 #case-study a.infographic-button {
   color: #fff;
+  font-size: 16px;
 }
 
 #case-study img {
@@ -443,7 +444,7 @@ p.quote {
 a.infographic-button {
   color: #fff;
   margin-top: 1em;
-  font-size: 26px !important;
+  font-size: 18px;
 }
 
 a.case-study-title {
