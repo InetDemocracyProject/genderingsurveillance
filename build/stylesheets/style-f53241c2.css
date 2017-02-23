@@ -149,7 +149,7 @@ section.banner {
   /*text-align: center;*/
   min-height: 14em;
   /*background-image: url('http://i.imgur.com/ROkPKjx.jpg');*/
-  background-image: url('/images/banner.jpg');
+  background-image: url('/images/banner-82258a05.jpg');
   /*margin-bottom: 1em;*/
   background-size: cover;
   /*background-repeat: repeat-x;*/
@@ -161,7 +161,7 @@ section.banner {
     min-height: 50em;
     margin-bottom: 3em;
     /*background-image: url('http://i.imgur.com/ROkPKjx.jpg');*/
-    background-image: url('/images/banner.jpg');
+    background-image: url('/images/banner-82258a05.jpg');
     zoom: reset;
   }
 }
