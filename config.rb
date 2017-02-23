@@ -1,6 +1,3 @@
-require "google_drive"
-require 'middleman-datasource/lib/middleman-datasource/extension'
-require 'pry'
 
 ###
 # Page options, layouts, aliases and proxies
@@ -27,7 +24,7 @@ page '/*.txt', layout: false
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
-  activate :datasource
+  # activate :datasource
   # https://docs.google.com/document/d/181sIeDz16VDDvCgoXfrqbF-2lbXwt-F8hzgjn3-12DM/pub
 end
 
@@ -74,7 +71,7 @@ end
 
 # Build-specific configuration
 configure :build do
-  activate :datasource
+  # activate :datasource
   # Minify CSS on build
   # activate :minify_css
 
