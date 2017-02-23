@@ -3,14 +3,17 @@ sudo: false
 cache: bundler
 before_script:
   - bundle install --no-deployment
-  - middleman build
-  - git add .
-  - git commit -m 'content build'
-  - git push origin master
 rvm:
   - ruby-head
 os:
   - linux
+after_success: |
+  if [ -n "$ghpass" ]; then
+    middleman build
+    git add .
+    git -c user.name='travis' -c user.email='travis' commit -m 'build'
+    git push origin master &2>/dev/null
+  fi
 matrix:
   fast_finish: true
   allow_failures:
