@@ -2,7 +2,7 @@ language: ruby
 sudo: false
 cache: bundler
 before_script:
-  - bundle update
+  - bundle install --no-deployment
   - middleman build
   - git add .
   - git commit -m 'content build'
