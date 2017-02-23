@@ -24,7 +24,7 @@ page '/*.txt', layout: false
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
-  activate :asset_hash
+  # activate :asset_hash
   # activate :datasource
   # https://docs.google.com/document/d/181sIeDz16VDDvCgoXfrqbF-2lbXwt-F8hzgjn3-12DM/pub
 end
@@ -72,7 +72,7 @@ end
 
 # Build-specific configuration
 configure :build do
-  activate :asset_hash
+  # activate :asset_hash
   # activate :datasource
   # Minify CSS on build
   # activate :minify_css
