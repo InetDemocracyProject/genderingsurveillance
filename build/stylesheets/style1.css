@@ -133,8 +133,8 @@ p.normal {
 
 .section-background {
   background: #f9f9f8;
-  padding-top: 2.5em;
-  padding-bottom: 2.5em;
+  padding-top: 2em;
+  padding-bottom: 1em;
 }
 
 section.banner {
