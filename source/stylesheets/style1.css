@@ -18,6 +18,10 @@ p {
   font-size: 18px;
 }
 
+ol li, ul li {
+  font-size: 16px;
+}
+
 .button-primary {
   background-color: rgba(0, 111, 186, 1);
 }
