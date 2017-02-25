@@ -43,6 +43,10 @@ a.read-more {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.right-align {
+  text-align: right;
+}
+
 /* end */
 
 body {
@@ -458,7 +462,18 @@ a.case-study-title:hover {
 }
 
 .footer-idp-logo {
-  height: 9em;
+  height: 8em;
+  margin-bottom: 2px;
+}
+
+.footer-pov-logo {
+  height: 3em;
+  margin-left: -8px;
+}
+
+p.idppov {
+  margin-bottom: 5px;
+  /*margin-top: 4px;*/
 }
 
 .footer-apc-logo {
